@@ -5,6 +5,7 @@ body{
     background-color: rgb(57, 58, 59);
 }
 header{
+    background-image: linear-gradient(to left, rgb(26, 26, 26), rgb(12, 12, 12));
     align-items: end;
     gap: 20px;
     margin-top: 0;
@@ -52,6 +53,8 @@ main{
    
 }
 .AbaDireita{
+    overflow-x: hidden;
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
     gap: 1vw;
@@ -66,10 +69,17 @@ main .AbaDireita section{
 }
 
 section h3{
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
     font-size: 2vw;
     margin-right: auto;
 }
 .AbaEsquerda{
+    background-image: linear-gradient(to top, rgb(70, 70, 70), rgb(170, 170, 170));
     border-radius: 20px;
     color: rgb(240, 248, 255);
     background-color: rgb(168, 168, 168);
@@ -79,6 +89,12 @@ section h3{
     flex-direction: column;
 }
 .AbaEsquerda h3{
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
     background-color: rgba(218, 235, 236, 0);
     color: black;
     padding-left: 10px;
@@ -92,6 +108,11 @@ section h3{
 .AbaDireita section p{
     font-size: 1vw;
 }
+.AbaEsquerda section{
+    background-image: linear-gradient(to bottom, rgb(189, 192, 201), rgb(201, 205, 245));
+    background-color: rgb(155, 157, 160);
+    border-radius: 20px;
+}
 .AbaEsquerda img{  
     padding-top: 10px;
     margin-left: auto;
@@ -103,4 +124,9 @@ section h3{
 .AbaEsquerda img:hover{
     width: 25vw;
     height: 25vw;
+}
+.AbaEsquerda section p{
+   
+    color: rgb(27, 27, 27);
+    font-size: 2vw;
 }
